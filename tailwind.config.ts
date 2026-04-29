@@ -16,13 +16,13 @@ const config: Config = {
           600: "#2E2E50",
         },
         ember: {
-          DEFAULT: "#E94560",
-          50: "#FFF1F4",
-          100: "#FFE0E6",
-          400: "#F0617B",
-          500: "#E94560",
-          600: "#D1304B",
-          700: "#A8203A",
+          DEFAULT: "#0E7A5F",
+          50: "#E6F4EF",
+          100: "#C9E7DC",
+          400: "#3DA084",
+          500: "#0E7A5F",
+          600: "#0B6350",
+          700: "#084D3E",
         },
         bone: {
           DEFAULT: "#F5F5F5",
@@ -37,7 +37,7 @@ const config: Config = {
       },
       boxShadow: {
         soft: "0 10px 30px -12px rgba(26, 26, 46, 0.18)",
-        ember: "0 14px 40px -12px rgba(233, 69, 96, 0.45)",
+        ember: "0 14px 40px -12px rgba(14, 122, 95, 0.45)",
       },
       keyframes: {
         "fade-up": {

@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     url: "https://entrenapowerevolution.mx",
     title: "Entrena Power Evolution | Gimnasio en Querétaro",
     description:
-      "Transforma tu cuerpo y tu energía. Gimnasio en Querétaro con 4.9★ en Google. Agenda tu pase gratis hoy.",
+      "Transforma tu cuerpo y tu energía. Gimnasio en Querétaro con coaches certificados, equipo profesional y comunidad real. Agenda tu pase gratis hoy.",
     siteName: "Entrena Power Evolution",
     images: [
       {
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Entrena Power Evolution | Gimnasio en Querétaro",
     description:
-      "Gimnasio en Querétaro con 4.9★ en Google. Agenda tu pase gratis hoy.",
+      "Resultados reales en Querétaro: entrenamiento funcional, pesas y rutinas personalizadas. Agenda tu pase gratis hoy.",
   },
   robots: { index: true, follow: true },
   alternates: { canonical: "https://entrenapowerevolution.mx" },

@@ -38,9 +38,9 @@ export function Navbar() {
         Saltar al contenido
       </a>
 
-      <div className="container-x flex h-20 items-center justify-between">
+      <div className="container-x flex h-20 items-center justify-between gap-6">
         <a href="#inicio" aria-label={site.name} className="shrink-0">
-          <Logo />
+          <Logo variant={scrolled ? "dark" : "light"} />
         </a>
 
         <nav
@@ -51,7 +51,11 @@ export function Navbar() {
             <a
               key={item.href}
               href={item.href}
-              className="font-display text-sm font-semibold uppercase tracking-wider text-ink/80 transition-colors hover:text-ember-500"
+              className={`font-display text-sm font-semibold uppercase tracking-wider transition-colors ${
+                scrolled
+                  ? "text-ink/80 hover:text-ember-500"
+                  : "text-white/85 hover:text-white"
+              }`}
             >
               {item.label}
             </a>
@@ -61,7 +65,11 @@ export function Navbar() {
         <div className="hidden items-center gap-3 lg:flex">
           <a
             href={`tel:${site.phoneDigits}`}
-            className="inline-flex items-center gap-2 font-display text-sm font-bold uppercase tracking-wider text-ink hover:text-ember-500"
+            className={`inline-flex items-center gap-2 whitespace-nowrap font-display text-sm font-bold uppercase tracking-wider transition-colors ${
+              scrolled
+                ? "text-ink hover:text-ember-500"
+                : "text-white/90 hover:text-white"
+            }`}
             aria-label={`Llamar al ${site.phone}`}
           >
             <Phone className="h-4 w-4" aria-hidden="true" />
@@ -78,7 +86,11 @@ export function Navbar() {
           aria-label={open ? "Cerrar menú" : "Abrir menú"}
           aria-expanded={open}
           aria-controls="mobile-menu"
-          className="grid h-11 w-11 place-items-center rounded-xl border border-ink/15 bg-white text-ink transition hover:bg-ink hover:text-white lg:hidden"
+          className={`grid h-11 w-11 place-items-center rounded-xl border transition lg:hidden ${
+            scrolled
+              ? "border-ink/15 bg-white text-ink hover:bg-ink hover:text-white"
+              : "border-white/30 bg-white/10 text-white backdrop-blur hover:bg-white hover:text-ink"
+          }`}
         >
           {open ? (
             <X className="h-5 w-5" aria-hidden="true" />

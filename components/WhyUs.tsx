@@ -2,12 +2,10 @@ import Image from "next/image";
 import {
   Award,
   Clock,
+  Flame,
   ShieldCheck,
   Sparkles,
-  Star,
-  Trophy,
 } from "lucide-react";
-import { site } from "@/lib/site";
 
 const reasons = [
   {
@@ -56,28 +54,22 @@ export function WhyUs() {
               <span className="text-ember-500">Es un cambio real.</span>
             </h2>
 
-            <div className="mt-7 inline-flex items-center gap-4 rounded-2xl border border-white/15 bg-white/5 p-4 backdrop-blur">
-              <div className="grid h-14 w-14 place-items-center rounded-xl bg-white">
-                <Trophy
-                  className="h-6 w-6 text-ember-500"
+            <div className="mt-7 inline-flex items-start gap-4 rounded-2xl border border-white/15 bg-white/5 p-4 backdrop-blur">
+              <div className="grid h-14 w-14 shrink-0 place-items-center rounded-xl bg-ember-500">
+                <Flame
+                  className="h-6 w-6 text-white"
                   aria-hidden="true"
                 />
               </div>
               <div>
-                <div className="flex items-center gap-1">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star
-                      key={i}
-                      className="h-4 w-4 fill-amber-400 text-amber-400"
-                      aria-hidden="true"
-                    />
-                  ))}
-                </div>
-                <p className="mt-1 font-display text-base font-bold">
-                  {site.rating} · {site.reviews} clientes satisfechos
+                <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-ember-500">
+                  Tu primer mes con plan
                 </p>
-                <p className="text-xs text-white/65">
-                  Validado por reseñas reales en Google Maps
+                <p className="mt-1 font-display text-base font-bold">
+                  Evaluación + rutina diseñada para ti
+                </p>
+                <p className="mt-1 text-xs text-white/65">
+                  Empiezas con un coach que entiende tu meta y arma tu progreso desde el día uno.
                 </p>
               </div>
             </div>

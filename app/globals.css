@@ -4,7 +4,7 @@
 
 :root {
   --color-ink: #1a1a2e;
-  --color-ember: #e94560;
+  --color-ember: #0e7a5f;
   --color-bone: #f5f5f5;
 }
 
@@ -35,15 +35,15 @@ body {
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-ember-500 px-7 py-3.5 font-display font-bold uppercase tracking-wide text-white transition-all duration-200 hover:bg-ember-600 hover:shadow-ember focus:outline-none focus:ring-4 focus:ring-ember-500/40 active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full bg-ember-500 px-7 py-3.5 font-display font-bold uppercase tracking-wide text-white transition-all duration-200 hover:bg-ember-600 hover:shadow-ember focus:outline-none focus:ring-4 focus:ring-ember-500/40 active:scale-[0.98];
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-ink bg-transparent px-7 py-3.5 font-display font-bold uppercase tracking-wide text-ink transition-all duration-200 hover:bg-ink hover:text-white focus:outline-none focus:ring-4 focus:ring-ink/30 active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border-2 border-ink bg-transparent px-7 py-3.5 font-display font-bold uppercase tracking-wide text-ink transition-all duration-200 hover:bg-ink hover:text-white focus:outline-none focus:ring-4 focus:ring-ink/30 active:scale-[0.98];
   }
 
   .btn-ghost-light {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/30 bg-white/5 px-7 py-3.5 font-display font-bold uppercase tracking-wide text-white transition-all duration-200 hover:border-white hover:bg-white hover:text-ink focus:outline-none focus:ring-4 focus:ring-white/30;
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border-2 border-white/30 bg-white/5 px-7 py-3.5 font-display font-bold uppercase tracking-wide text-white transition-all duration-200 hover:border-white hover:bg-white hover:text-ink focus:outline-none focus:ring-4 focus:ring-white/30;
   }
 
   .section {
@@ -71,8 +71,8 @@ body {
 .diagonal-stripes {
   background-image: repeating-linear-gradient(
     -45deg,
-    rgba(233, 69, 96, 0.08),
-    rgba(233, 69, 96, 0.08) 2px,
+    rgba(14, 122, 95, 0.08),
+    rgba(14, 122, 95, 0.08) 2px,
     transparent 2px,
     transparent 14px
   );
