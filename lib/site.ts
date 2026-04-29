@@ -18,7 +18,7 @@ export const site = {
     { day: "Domingo", time: "8:00 — 12:00" },
   ],
   social: {
-    facebook: "https://facebook.com/",
+    facebook: "https://www.facebook.com/entrenaPowerEvolution",
   },
   nav: [
     { label: "Inicio", href: "#inicio" },
